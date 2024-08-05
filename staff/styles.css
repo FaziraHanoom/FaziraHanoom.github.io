@@ -1,0 +1,99 @@
+body {
+    background-color: #4668CE;
+    padding-bottom: 600px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+    text-align: center;
+    background: #ffffff;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: inline-flex;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.menu ul li {
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.active {
+    background: #4668CE;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.active, .menu ul li:hover {
+    background: #4668CE;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.sbm1 {
+    display: none;
+    z-index: 2;
+}
+
+.menu ul li:hover .sbm1 {
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    margin-left: -15px;
+    background: #ffffff;
+}
+
+.menu ul li:hover .sbm1 ul {
+    display: block;
+    margin: 15px;
+}
+
+.menu ul li:hover .sbm1 ul li {
+    border-bottom: 1px solid grey;
+    background: transparent;
+    width: 120px;
+    padding: 15px;
+    text-align: left;
+}
+
+.menu ul li:hover .sbm1 ul li:last-child {
+    border: none;
+}
+
+.menu ul li:hover .sbm1 ul li a {
+    color: #000000;
+}
+
+.menu ul li:hover .sbm1 ul li a:hover {
+    color: #4668CE;
+}
+
+.menu .logo {
+    height: 70px;
+}
+
+footer {
+    background-color: #FB6303;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the footer is above other elements */
+}
